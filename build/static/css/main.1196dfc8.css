@@ -201,7 +201,7 @@ body {
 }
 
 .avatar__button {
-	background: url(../media/avatar-arrow.4710e817501213dc8a85.svg) no-repeat;
+	background: url(/static/media/avatar-arrow.4710e817501213dc8a85.svg) no-repeat;
 	border: none;
 	height: 7.5px;
 	transition: rotate .1s;
