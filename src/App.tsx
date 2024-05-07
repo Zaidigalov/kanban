@@ -4,7 +4,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Main from './components/main/Main';
 import { ITask, TaskContext } from './components/context/context';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 function App() {
   const storageTasks: ITask[] = JSON.parse(localStorage.getItem('tasks') || '[]');
@@ -24,7 +24,7 @@ function App() {
   }, [tasks]);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <TaskContext.Provider value={{ tasks, addTask, updateTasks }}>
         <div className="App">
           <Header></Header>
@@ -32,7 +32,7 @@ function App() {
           <Footer></Footer>
         </div>
       </TaskContext.Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
