@@ -1,0 +1,65 @@
+.main {
+	flex: 1 1 auto;
+	display: flex;
+}
+
+.groups {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+	padding: 30px;
+	width: 100%;
+}
+
+.edit {
+	background-color: white;
+	width: 95vw;
+	min-height: 80vh;
+	border-radius: 5px;
+	padding: 25px;
+	margin: auto;
+}
+
+.edit__task-title {
+	margin-bottom: 30px;
+}
+
+.edit__task-description {
+	width: 100%;
+	min-height: 200px;
+}
+
+.edit__button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
+
+.edit__save {
+	background-color: var(--bg-blue);
+	margin-right: 5px;
+}
+
+.edit__close {
+	background-color: rgb(244 68 68);
+}
+
+@media screen and (width < 768px) {
+
+	.groups {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		padding: 30px;
+		width: 100%;
+	}
+
+	.group {
+		width: 100%;
+	}
+}
